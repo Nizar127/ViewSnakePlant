@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="273dp"
+        android:layout_height="321dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSignUp"
+        app:layout_constraintVertical_bias="0.268">
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/karla"
+            android:hint="First Name"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/karla"
+            android:hint="Last Name"
+            android:inputType="textPersonName" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/karla"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <Button
+            android:id="@+id/regBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karla_bold"
+            android:text="REGISTER"
+            app:backgroundTint="#2F5061" />
+
+        <TextView
+            android:id="@+id/textAlready"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karla"
+            android:gravity="center"
+            android:text="Already have an account? Sign in here" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/karla_bold"
+        android:text="Sign Up"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.045" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ProfileActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/karla_bold"
+        android:text="Profile"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="158dp"
+        android:layout_marginLeft="158dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="Logout"
+        app:backgroundTint="#2F5061"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change password"
+        app:backgroundTint="#2F5061"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <Button
+        android:id="@+id/editProfileBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit profile"
+        app:backgroundTint="#2F5061"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="273dp"
+        android:layout_height="49dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.071">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/karla_bold"
+            android:text="Email" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:fontFamily="@font/karla"
+            android:text="User Email" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="23dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0"
+        android:src="@drawable/ic_email" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.458"
+        android:src="@drawable/ic_person"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="273dp"
+        android:layout_height="55dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="251dp"
+            android:layout_marginRight="251dp"
+            android:fontFamily="@font/karla_bold"
+            android:text="Full Name" />
+
+        <TextView
+            android:id="@+id/textFullName"
+            android:layout_width="298dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="36dp"
+            android:layout_weight="0"
+            android:fontFamily="@font/karla"
+            android:text="User Full Name" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textfirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User first name"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <TextView
+        android:id="@+id/textlastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User last name"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/tealgreen"
+        app:itemIconTint="@color/mistyblue"
+        app:itemTextColor="@color/mistyblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
